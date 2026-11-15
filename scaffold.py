@@ -1,14 +1,19 @@
-"""
-Neural Networks From Scratch: Forward and Backward scaffold.
-
-Run this with: python scaffold.py
-Uses functions defined in model.py.
-"""
-
-from model import *  # noqa: F401, F403 (pulls in your solution functions)
-
 """End-to-end demo: NumPy neural net from scratch on a nonlinear dataset."""
 import numpy as np
+
+from nns import (
+    initialize_weights,
+    make_dense,
+    make_activation,
+    make_loss,
+    make_sequential,
+    forward_backward,
+    make_optimizer,
+    train_step,
+    train,
+    design_network,
+    improve_generalization,
+)
 
 
 def _nonlinear_dataset(n_samples=256, seed=0, label_noise=0.0):
