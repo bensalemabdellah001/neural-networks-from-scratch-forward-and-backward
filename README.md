@@ -79,7 +79,15 @@ Evaluation discipline: test set split off first and never touched until the fina
 | Val   | 180     | 98.33 %  |
 | **Test** | **180** | **97.22 %** |
 
-*(MNIST numbers will appear here after the WiFi step — same script, one function swap.)*
+### MNIST classification
+
+Network: 784 → 512 → 256 → 10 (ReLU, He init, Adam lr=1e-3, 50 epochs).
+
+| Split | Samples | Accuracy |
+|-------|---------|----------|
+| Train | 55 999  | ~99 %    |
+| Val   | 7 001   | 97.93 %  |
+| **Test** | **7 000** | **97.67 %** |
 
 ### PyTorch parity
 
